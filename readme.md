@@ -1,36 +1,34 @@
-# Quantum Mechanical Keyboard Firmware
+# Custom 14x5 Keyboard QMK Fork
 
-[![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
-[![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
-[![Docs Status](https://img.shields.io/badge/docs-ready-orange.svg)](https://docs.qmk.fm)
-[![GitHub contributors](https://img.shields.io/github/contributors/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/pulse/monthly)
-[![GitHub forks](https://img.shields.io/github/forks/qmk/qmk_firmware.svg?style=social&label=Fork)](https://github.com/qmk/qmk_firmware/)
+Forked from: https://github.com/qmk/qmk_firmware
 
-This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the [Clueboard product line](https://clueboard.co).
+I followed [this](https://github.com/ruiqimao/keyboard-pcb-guide) guide to design the PCB.
 
-## Documentation
+- KiCad PCB files can be found in the [pcb](pcb) directory.
+- KiCad PCB files for a switch plate can found in the [plate](plate) directory.
+- Laser cut case files can be found in the [case](case) directory.
 
-* [See the official documentation on docs.qmk.fm](https://docs.qmk.fm)
+Notes:
+- I did not originally design the PCB with holes for screws. I ended up drilling
+  holes in the PCB in safe locations for screws. The screw holes in the acrylic
+  case cutouts line up with the holes that I drilled personally. If you want to
+  rebuild the board, I recommend adding holes to the PCB and changing the hole
+  placements in the acrylic case cutouts to match.
+- I did not originally design the PCB with RGB LED strips in mind. The LED strip
+  I am using is soldered directly onto some pins of the MCU. If you want RGB LED
+  strip support, I recommend adding some soldering points to the PCB.
+- I did not fill the PCB for the switch plate with copper, so it flexes a good
+  amount. If you want to rebuild the board, I recommend modifying the PCB plate
+  and filling it with copper to give a sturdier feel.
 
-The docs are powered by [Docsify](https://docsify.js.org/) and hosted on [GitHub](/docs/). They are also viewable offline; see [Previewing the Documentation](https://docs.qmk.fm/#/contributing?id=previewing-the-documentation) for more details.
+## Personal Keyboard Specs
 
-You can request changes by making a fork and opening a [pull request](https://github.com/qmk/qmk_firmware/pulls), or by clicking the "Edit this page" link at the bottom of any page.
+- Switches: Lubed Cherry MX Clear with 62g springs
+- Keycaps:
+  - [KPrepublic Japanese Root base](https://kprepublic.com/collections/pbt-dye-sub-keycaps/products/kprepublic-139-japanese-root-japan-black-font-language-cherry-profile-dye-sub-keycap-pbt-for-gh60-xd60-xd84-cospad-tada68-87-104)
+  - [Muted Copper Koi Fish artisan](https://www.etsy.com/shop/DreamKaps?ref=from_order_confirm_drawer_receipt_modal)
+  - Some cheap PBT black & gray blanks for modifiers
 
-## Supported Keyboards
+## Pictures
 
-* [Planck](/keyboards/planck/)
-* [Preonic](/keyboards/preonic/)
-* [ErgoDox EZ](/keyboards/ergodox_ez/)
-* [Clueboard](/keyboards/clueboard/)
-* [Cluepad](/keyboards/clueboard/17/)
-* [Atreus](/keyboards/atreus/)
-
-The project also includes community support for [lots of other keyboards](/keyboards/).
-
-## Maintainers
-
-QMK is developed and maintained by Jack Humbert of OLKB with contributions from the community, and of course, [Hasu](https://github.com/tmk). The OLKB product firmwares are maintained by [Jack Humbert](https://github.com/jackhumbert), the Ergodox EZ by [ZSA Technology Labs](https://github.com/zsa), the Clueboard by [Zach White](https://github.com/skullydazed), and the Atreus by [Phil Hagelberg](https://github.com/technomancy).
-
-## Official Website
-
-[qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+TODO
