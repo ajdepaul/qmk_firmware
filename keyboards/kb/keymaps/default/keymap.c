@@ -113,7 +113,7 @@ const rgblight_segment_t PROGMEM caps_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, 24, 0, 255, 255} // red
 );
 const rgblight_segment_t PROGMEM fn_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 24, 10, 255, 255} // red orange
+    {0, 24, 12, 255, 255} // red orange
 );
 const rgblight_segment_t PROGMEM colemak_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, 24, HSV_WHITE}
