@@ -33,4 +33,8 @@ Notes:
 
 ## Pictures
 
-TODO
+![](pics/white.jpg)
+
+![](pics/rgb.jpg)
+
+![](pics/back.jpg)
