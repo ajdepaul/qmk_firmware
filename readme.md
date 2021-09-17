@@ -8,6 +8,8 @@ I followed [this](https://github.com/ruiqimao/keyboard-pcb-guide) guide to desig
 - KiCad PCB files for a switch plate can found in the [plate](plate) directory.
 - Laser cut case files can be found in the [case](case) directory.
 
+Build with QMK CLI: `qmk compile -kb kb -km default`
+
 Notes:
 - I did not originally design the PCB with holes for screws. I ended up drilling
   holes in the PCB in safe locations for screws. The screw holes in the acrylic
@@ -27,7 +29,7 @@ Notes:
 - Keycaps:
   - [KPrepublic Japanese Root base](https://kprepublic.com/collections/pbt-dye-sub-keycaps/products/kprepublic-139-japanese-root-japan-black-font-language-cherry-profile-dye-sub-keycap-pbt-for-gh60-xd60-xd84-cospad-tada68-87-104)
   - [Muted Copper Koi Fish artisan](https://www.etsy.com/shop/DreamKaps?ref=from_order_confirm_drawer_receipt_modal)
-  - Some cheap PBT black & gray blanks for modifiers
+  - Cheap PBT black & gray blanks for modifiers
 
 ## Pictures
 
